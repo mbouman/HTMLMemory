@@ -1,0 +1,81 @@
+body {
+  text-align: center;
+}
+header {
+  width: auto;
+  display: grid;
+  grid-template-columns: 0.4fr 0.2fr 0.4fr;
+}
+#player-1 {
+  display: none;
+  padding: 1rem;
+  background-color: green;
+}
+
+#player-2 {
+  display: none;
+  padding: 1rem;
+  background-color: green;
+}
+
+#start-new-game {
+  margin: 0;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+#overlay {
+  position: absolute; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  left: 310px;
+  width: 60%;
+  height: 60%;
+  background-color: transparent;
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+#game-board {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 0.2fr 0.6fr 0.2fr;
+  width: auto;
+}
+
+#game-board ol {
+  list-style: none;
+  display: grid;
+  margin: auto;
+  padding: 0;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  width: 800px;
+  height: 800px;
+}
+
+#game-board li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+}
+
+#game-board li.found {
+  background-color: white;
+}
+
+#game-board li.clicked {
+  background-color: brown;
+}
+
+#player-1-side {
+  width: auto;
+  text-align: center;
+}
+
+#player-2-side {
+  width: auto;
+  text-align: center;
+}
