@@ -44,7 +44,7 @@ function startNewGame() {
   player1Element.style.display = "block";
   player2Element.style.display = "none";
   player1SideElement.innerHTML = "<p>SPELER 1</p>";
-  player2SideElement.innerHTML = "<p>SPELER 1</p>";
+  player2SideElement.innerHTML = "<p>SPELER 2</p>";
 }
 
 function shuffle(array) {
