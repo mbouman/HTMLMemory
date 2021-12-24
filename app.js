@@ -131,11 +131,15 @@ function checkForSame() {
 function imageToPlayerSide(activePlayer) {
   if (activePlayer === 1) {
     let img = document.createElement("img");
+    let paragraph = document.createElement("p");
     img.src = memoryPictures[memoryNumbers[secondClickedField - 1] - 1];
     player1SideElement.appendChild(img);
+    player1SideElement.appendChild(paragraph);
   } else {
     let img = document.createElement("img");
+    let paragraph = document.createElement("p");
     img.src = memoryPictures[memoryNumbers[secondClickedField - 1] - 1];
     player2SideElement.appendChild(img);
+    player2SideElement.appendChild(paragraph);
   }
 }
